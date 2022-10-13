@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
 
@@ -81,7 +79,9 @@ nav {
 
 .navbar li::before {
     content: '';
-    background-color: #631217;
+    
+    background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
+
 
     width: 100%;
     height: 300%;
@@ -172,12 +172,61 @@ nav {
 }
   
 .hero-text button:hover {
-  background-color: #631217 ;
+  
+  background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
+
 }
   
 .hero-text button:active {
   transform: scale(0.98);
   box-shadow: 3px 2px 22px 1px rgba (0, 0, 0, 0.24);
+}
+
+/* SERVICIOS */
+
+.servicios-container {
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+  
+.icon-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #fff;
+    
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+    
+    padding: 1.5em;
+
+    text-align: center;    
+}
+
+.icon-container:hover {
+    
+    background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
+
+    
+
+}
+.icon-container i{
+    
+    font-size: 2.5rem;
+    color: #333;
+       
+    padding: 1em;
+    transition: transform 1s;
+    
+}
+
+.icon-container:hover i,
+.icon-container:hover p {
+    color: #fff;
+    transform: rotateY(360deg);
 }
 
  
@@ -188,4 +237,3 @@ nav {
 .logo{
     margin: 0 auto;
 } */
->>>>>>> 4c338f726aad66418c40b807a0bda811142ea953
