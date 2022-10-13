@@ -1,4 +1,4 @@
-let comprar = confirm("desea comprar?")
+let comprar = confirm("¿Deseas unirte al Mi Club?")
 
 console.log(window.document)
 console.log(document.querySelector('h1'))
@@ -19,10 +19,11 @@ if (click) {
   document.querySelector('p2').classList.add('nombreMiClub');
 }
 Swal.fire({
-    title: 'Sweet!',
-    text: 'Modal with a custom image.',
-    imageUrl: "C:\Users\pc\Desktop\Codo a Codo\trabajo grupal\TRABAJO-PRACTICO-INNATO\favicon\android-chrome-512x512.png",
+    title: '¡Genial!',
+    text: 'Llena el siguiente formulario',
+    imageUrl: 'C:\Users\pc\Desktop\Codo a Codo\trabajo grupal\TRABAJO-PRACTICO-INNATO\views\imagenes\LOGO.png',
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: 'Custom image',
-  })
+  });
+ 
