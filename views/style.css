@@ -1,6 +1,164 @@
-.nombreMiClub {
-    color: darkviolet;
-    background-color: darksalmon;
-    font-size: medium;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background-image: linear-gradient(to top, #cfd9df 0%, #3e4041 100%);*/
+    margin: 0;
+    height: 100vw;
+   /* background-repeat: no-repeat;
+    background-size: cover;*/
+  
+  
+}
+  
+.bajada{
+    font-family: 'Raleway', sans-serif;
+   width: 90%;
+   margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+ margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  
+ 
+}
+
+.container_productos{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+align-items: center;
+overflow: hidden;
+flex-wrap: wrap;
+    
+}
+
+
+.titulo_1{
+    width: 100%;
+    height: 100px;
+    color:#fff;
+    background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
+    background-size: 200% 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: cambiar 10s infinite;
+    font-family: 'Raleway', sans-serif;
+    
+  
+}
+strong{
+    color: rgb(238, 78, 10);
+}
+@keyframes cambiar{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+
+}
+
+.seleccion_producto{
+   position: relative;
+   margin: 15px;
+   display: flex;
+}
+.seleccion_producto img{
+width: 220 px;
+height: 220px;
+border-radius: 6px;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
+
+
+
+}
+.titulo_seleccion {
+   
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 42, 39, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .3s ease;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    
+}
+.seleccion_producto:hover .titulo_seleccion{
+    transform: scale(1);} 
+
+.separador{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(82, 76, 76);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombre_categoria{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.categorias_productos{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
+}
+.categorias{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px lightslategray, 0 6px 20px rgba(0, 0, 0, 0.19) ;
+   display: flex;
+   flex-direction: row;
+    width: 200px;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.categorias img{
+    width: 200px;
+    height: auto;
+    
+}
+.nombre_producto{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif; 
+  
+}
+
+.futuro nav{
+    width: 100%;
+    height: 200px;
+    background-color: #4a4544;
+}
+
+.footer_productos{
+    background-color: rgb(15, 14, 14);
+    width: 100%;
+    height: 200px;
 }
