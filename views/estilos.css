@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap'); */
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 a, p, button {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
   
 ul, li {
@@ -23,12 +23,12 @@ a{
 
 h1,
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: clamp(2rem, 1.3571rem + 2.8571vw, 3.5rem);
 }
 
 h3 { 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: clamp(1.2rem, 1.7857rem + 0.9524vw, 1.5rem);
 }
 
@@ -66,7 +66,7 @@ nav {
 }
 
 .logo {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
 }
 
@@ -161,7 +161,7 @@ nav {
     border-radius: 50px;
     
   
-    font-family: 'Quattrocento Sans', sans-serif;;
+    font-family: 'Roboto Flex', sans-serif;;
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
