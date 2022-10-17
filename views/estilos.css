@@ -55,6 +55,7 @@ header {
   
 nav {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     padding: 1.2em;
@@ -63,11 +64,23 @@ nav {
 
 .navbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
 }
 
 .navbar li {
@@ -459,6 +472,30 @@ footer ul a {
 }
 
 @media screen and (max-width: 460px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .navbar.show {
+        display: flex;
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar li {
+        margin-top: .75em;
+    }
+
 
     .servicios-container {
         grid-template-columns: 1fr;
