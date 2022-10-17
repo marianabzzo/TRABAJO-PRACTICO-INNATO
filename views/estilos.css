@@ -46,10 +46,11 @@ img {
   
 header {
     min-height: 100vh;
-    background-color: #000;
-    background-image: url(./imagenes/frutas\ y\ frutos\ secos.png);
+    /* background-color: #000; */
+    background-image: url(./imagenes/hero-img.jpg), url(./imagenes/hero-img.jpg);
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay;
     position: relative;
 }
   
@@ -57,7 +58,7 @@ nav {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 1.2em;
     background-color: rgba(0, 0, 0, 0.308);
 }
@@ -96,7 +97,7 @@ nav {
 .navbar a.active {
     color: #fff;
     font-weight: 700;
-    text-transform: uppercase;
+    
     
 }
 .navbar a:after {
@@ -121,7 +122,7 @@ nav {
     padding: 1.5em;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
