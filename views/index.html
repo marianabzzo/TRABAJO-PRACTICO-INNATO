@@ -14,6 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./estilos.css">
 </head>
@@ -21,55 +24,133 @@
 <body>
 
 
-    <header class="container">
+  <header class="container">
 
-        <nav>
-            
-            <a href="#" class="logo">Innato</a>
+    <nav>
+        
+      <a href="#" class="logo">Innato</a>
 
-            <ul class="navbar">
-                <li><a class="nav-link" href="#home">inicio</a></li>
-                <li><a class="nav-link" href="#productos">productos</a></li>
-                <li><a class="nav-link" href="#club">club</a></li>
-                <li><a class="nav-link" href="#about">nosotros</a></li>
-                <li><a class="nav-link" href="#contact">contacto</a></li>
-                
-            </ul>
-            
-        </nav>
-      
-        <div class="hero-text">
-          <h1>Los sabores del mundo</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repellendus.</p>
-          <button>Saber más</button>
-        </div>
-      
+      <ul class="navbar">
+        <li><a class="nav-link" href="#home">inicio</a></li>
+        <li><a class="nav-link" href="#productos">productos</a></li>
+        <li><a class="nav-link" href="#club">club</a></li>
+        <li><a class="nav-link" href="#about">nosotros</a></li>
+        <li><a class="nav-link" href="#contact">contacto</a></li>
+          
+      </ul>
+        
+    </nav>
   
-    </header>
+    <div class="hero-text">
+      <h1>Los sabores del mundo</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repellendus.</p>
+      <button>Saber más</button>
+    </div>
+    
 
-    <main>
-        <section class="container">
-            <div class="servicios-container">
-              <div class="icon-container">
-                <i class="fa fa-truck"></i>
-                <p>entrega a domicilio</p>  
-              </div>
-              <div class="icon-container">
-                <i class="fa fa-phone-square"></i>
-                <p>atención personalizada</p>  
-              </div>
-              <div class="icon-container">
-                <i class="fa fa-credit-card"></i>
-                <p>todos los medios de pago</p>  
-              </div>
-              <div class="icon-container">
-                <i class="fa fa-gift"></i>
-                <p>regalos empresariales</p>  
-              </div>
-      
-            </div>
-          </section>
-    </main>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="servicios-container">
+        <div class="icon-container">
+          <i class="fa fa-truck"></i>
+          <p>entrega a domicilio</p>  
+        </div>
+        <div class="icon-container">
+          <i class="fa fa-phone-square"></i>
+          <p>atención personalizada</p>  
+        </div>
+        <div class="icon-container">
+          <i class="fa fa-credit-card"></i>
+          <p>todos los medios de pago</p>  
+        </div>
+        <div class="icon-container">
+          <i class="fa fa-gift"></i>
+          <p>regalos empresariales</p>  
+        </div>
+
+      </div>
+      </section>
+
+    <section class="novedades container" id="novedades">
+
+      <h2>novedades</h2>
+        
+      <div class="grid-container">
+        
+        <article class= "art">
+          <img src="./imagenes/novedad-2.jpg" alt="picada">
+          <div class="novedades-texto">
+            <h3>Tablas</h3>
+            <p>Para esa reunión especial o para regalar, seleccionamos productos premium para vos.</p>
+            <a href="./productos.html#picadas" class="btn">Más info</a>
+
+          </div>
+        </article>
+        
+        <article class= "art">
+          <img src="./imagenes/novedad-1.jpg" alt="taza de café">
+          <div class="novedades-texto">
+            <h3>Café</h3>
+            <p>Un buen día comienza con un buen café. Lo sabemos y te ofrecemos la más amplia variedad para acompañarte cada día.</p>
+            <a href="./productos.html#cafe" class="btn">Más info</a>
+
+
+          </div>
+        </article>
+        
+        <article class= "art">
+          <img src="./imagenes/novedad-3.jpg" alt="botellas de vino">
+          <div class="novedades-texto">
+            <h3>Vinos</h3>
+            <p>Sumamos más bodegas a nuestra empresa! Los galardonados del mundo dicen presente. Acercate a degustarlos.</p>
+            <a href="./productos.html#vinos" class="btn">Más info</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="club container">
+      <div class="club-grid-container">
+        <div class="div1">
+          <h2>Club Innato</h2>
+        </div>
+        <div class="div2"></div>
+        <div class="div3">
+          <img src="./imagenes/club-index.jpg" alt="personas frente a computadora">
+        </div>
+        <div class="div4">
+          <h2>Más beneficios <br> más gourmet</h2>
+          <p>Creamos un programa de beneficios para acercarte descuentos y experiencias exclusivas.</p>
+          <p>Empezá a disfrutar ahora de los beneficios de ser parte del Club de Innato!</p>
+          <a href="./club.html">Unite ahora!</a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <footer class="container">
+    <div class="footer-img">
+      <img src="./imagenes/LOGO.png" alt="logo" class="footer-logo">
+    </div>
+    
+      <ul class="footer-flex">
+        <li><a href="#home">inicio</a></li>
+        <li><a href="./productos.html">productos</a></li>
+        <li><a href="./club.html">club</a></li>
+        <li><a href="./contacto.html">nosotros</a></li>
+      </ul>
+    
+    <div class="sociales footer-flex">
+      <a href="https://es-la.facebook.com"><i class="fa fa-facebook-square"></i></a>
+      <a href=""><i class="	fa fa-instagram"></i></a>
+      <a href=""><i class="	fa fa-twitter-square"></i></a>
+      <a href=""><i class="fa fa-linkedin-square"></i></a>
+    </div>
+
+  </footer>
 
 </body>
 </html>

@@ -17,13 +17,41 @@
     <div>
 
       <h1>Formulario</h1>
-          <form id="Formulario">
-    
-            <input type="text" name="Nombre" placeholder="Nombre y Apellido">
-            <input type="email" name="Email" placeholder="Email">
-            <button type="submit">Enviar</button>        
+        <div class="container">      
+          <form action="validar.html" method="get" id="Formulario">
+            
+            <input type="text" id="nombre" name="Nombre" placeholder="Nombre y Apellido" required>
+            <br>
+            <input type="email" id="email" name="Email" placeholder="Email" required>
+            <br>
+            <input type="edad" id="edad" name="Email" placeholder="Edad" min="1" max="99">
+            <br>
+            <input type="text" id="provincia"placeholder= "Ingresar provincia">
+            </label>
+            <br>
+            <button type="submit" id="submit">Buscar provincia</button>
+            <br>  
+
+            <fieldset>
+              <legend>Género</legend>
+              <input type="radio" id="genero" name="Genero" value="Mujer">Mujer 
+              <input type="radio" id="genero" name="Genero" value="Hombre">Hombre
+              <input type="radio" id="genero" name="Genero" value="Otro" >Otro 
+            </fieldset>
+            <br>
+            
+            <button type="submit">Enviar</button> 
+                 
           </form>
+          </div>
+            <pre id ="results">
+              
+            </pre> 
+          </div>
+        </div>  
       </div>
+
+
          
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./app.js"></script>
