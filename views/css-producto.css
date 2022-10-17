@@ -6,14 +6,65 @@ body{
     /*background-image: linear-gradient(to top, #cfd9df 0%, #3e4041 100%);*/
     margin: 0;
     height: 100vw;
-    
+    box-sizing: border-box;
     
    /* background-repeat: no-repeat;
     background-size: cover;*/
   
   
 }
+/*------------------header y nav----------------------------*/
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px ;
+    font-family: 'Raleway', sans-serif;
+     margin: 0;
+     flex-wrap: wrap;
+}
+.header .logo_innato img{
+    width: 70px;
+    height: auto;
+ margin-bottom:  5px;
+ margin-left: 30px;
+   
+   
+}
+.header .navbar .nav-link{
+    list-style: none;
+     align-items: center;
+    
+}
   
+.header .navbar li{
+    display: inline-block;
+    padding: 0 10px;
+   margin-bottom: 10px;
+    align-items: inherit;
+    
+}
+
+.header .navbar li a:hover{
+    color: #e69508;
+
+}
+
+.header .navbar a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+   
+}
+
+
+
+/*--------------fin header----------------------------------*/
+
+
+/*---------------------imagenes para eleccion del catalogo-------------*/
 .bajada{
     font-family: 'Raleway', sans-serif;
    width: 90%;
@@ -59,13 +110,14 @@ flex-direction: row;
 strong{
     color: rgb(238, 78, 10);
 }
+/*-------------gradient con animacion-------------*/
 @keyframes cambiar{
     0%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
     100%{background-position: 0% 50%;}
 
 }
-
+/*------------- fin gradient con animacion-------------*/
 .seleccion_producto{
    position: relative;
    margin: 15px;
@@ -87,7 +139,7 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     position: absolute;
     
     width: 100%;
-    height: a;
+    height: auto;
     background: rgba(244, 185, 10, 0.891);
     display: flex;
     justify-content: center;
@@ -98,9 +150,14 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     cursor: pointer;
     
 }
+.seleccion_producto .titulo_seleccion{
+transition: all 0.5s;
+}
 .seleccion_producto:hover .titulo_seleccion{
     transform: scale(1);} 
+/*-------------------fin de imagen eleccion----------------*/
 
+/*------------------------------galeria-----------------------------*/
 .separador{
     width: 100%;
     height: 40px;
@@ -128,7 +185,8 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     justify-content: space-around;
     overflow: hidden;
     flex-wrap: wrap;
-   
+    cursor: pointer;
+ 
 
    
 
@@ -164,12 +222,14 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     color: #696565;
     text-align: center;
 }
-
-.futuro nav{
-    width: 100%;
-    height: 200px;
-    background-color: #4a4544;
+.categorias_productos .categorias{
+    transition: all 0.3s;
 }
+.categorias_productos .categorias:hover{
+transform: scale(1.1);
+}
+
+
 /*
 .footer_productos{
     background-color: rgb(15, 14, 14);
@@ -208,14 +268,14 @@ footer{
     overflow: hidden;
  
 }
-/*o
+
 .transparencia{
 background-color: black;
 pacity: .8;
 width: 100%;
 height: 300px;
 position: absolute;
-}*/
+}
 
 
 .iconos{
@@ -267,63 +327,4 @@ align-items: center;
 }/*fin footer///////////////////////////*/
 
 
-nav {
-    display: flex;
-    justify-content:space-around;
-    align-items: flex-end;
-    padding: 1.2em;
-    background-color:black;
-  
-}
-navbar {
-    display: flex;
-    
-}
-.navbar li {
-    margin-left: 16px;
-    position: relative;
-    z-index: 2;
-    transition: color 0.5ms;
-}
-.navbar li::before {
-    content: '';
-    
-    background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
 
-
-    width: 100%;
-    height: 300%;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: top 0.5s, opacity 0.5s;
-}
-a, p, button {
-    font-family: 'Quattrocento Sans', sans-serif;
-}
-  
-ul, li {
-    list-style-type: none;
-}
-  
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.navbar li:hover {
-    color: #fff;
-}
-
-.navbar li:hover::before {
-    top: 50%;
-    opacity: 1;
-}
-
-.navbar a {
-    
-    padding: .7em 1.25em;
-}
