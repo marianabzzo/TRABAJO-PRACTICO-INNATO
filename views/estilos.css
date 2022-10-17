@@ -371,3 +371,49 @@ nav {
     border: none;
     background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
 }
+
+
+/* FOOTER */
+
+footer {
+    
+    background-color: #d66b4e;
+    position: relative;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 90px;
+    position: absolute;
+    top: -10%;
+}
+
+footer ul {
+    padding-top: 5rem;
+}
+
+footer ul a {
+    color: #fff;
+}
+
+.sociales a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-flex li,
+.sociales a {
+    margin: 1rem 1.5rem;
+}
