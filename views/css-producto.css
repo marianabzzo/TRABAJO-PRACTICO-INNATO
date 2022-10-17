@@ -87,7 +87,7 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     position: absolute;
     
     width: 100%;
-    height: auto;
+    height: a;
     background: rgba(244, 185, 10, 0.891);
     display: flex;
     justify-content: center;
@@ -182,6 +182,8 @@ footer{
     width: 100%;
     height: 300px;
     align-content: center;
+    align-items: center;
+    
 }
 .footer_productos{
    
@@ -194,6 +196,7 @@ footer{
     height: 200px;
    
    
+   
 
 } 
 
@@ -203,15 +206,18 @@ footer{
     position: absolute;
     margin: 0;
     overflow: hidden;
+ 
 }
+/*o
 .transparencia{
 background-color: black;
-opacity: .8;
+pacity: .8;
 width: 100%;
 height: 300px;
 position: absolute;
-}
-/*agregue posición relativa para poder mover los iconos*/
+}*/
+
+
 .iconos{
     color: #f7cb09;
     position: relative;
@@ -233,6 +239,7 @@ position: absolute;
     height: auto;
 left: 45%;
 top: 100px;
+align-items: center;
    
     
     
@@ -258,11 +265,8 @@ top: 100px;
     font-family: 'Raleway', sans-serif; 
    margin-top: 10px;
 }/*fin footer///////////////////////////*/
-header {
-   width: 100%;
-    background-color: #000;
-    position: relative;
-}
+
+
 nav {
     display: flex;
     justify-content:space-around;
