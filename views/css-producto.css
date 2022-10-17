@@ -7,6 +7,7 @@ body{
     margin: 0;
     height: 100vw;
     
+    
    /* background-repeat: no-repeat;
     background-size: cover;*/
   
@@ -86,7 +87,7 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     position: absolute;
     
     width: 100%;
-    height: 87%;
+    height: auto;
     background: rgba(244, 185, 10, 0.891);
     display: flex;
     justify-content: center;
@@ -150,11 +151,18 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     height: auto;
     
 }
-.nombre_producto{
+.nombre_producto {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-family: 'Raleway', sans-serif; 
+    font-size: 1em;
+    color: rgb(80, 77, 77);
   
+}
+.nombre_producto h3{
+    font-size: 15px;
+    color: #696565;
+    text-align: center;
 }
 
 .futuro nav{
@@ -168,6 +176,13 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     width: 100%;
     height: 200px;
 }*/
+/*footer///////////////////////////////////////////////////*/
+footer{
+    display: block;
+    width: 100%;
+    height: 300px;
+    align-content: center;
+}
 .footer_productos{
    
     font-size: 12px;
@@ -180,7 +195,8 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
    
    
 
-}
+} 
+
 .imagen_footer{
     width: 100%;
     height: 300px;
@@ -199,24 +215,26 @@ position: absolute;
 .iconos{
     color: #f7cb09;
     position: relative;
-   top:  100px;
+   top:  50px;
    padding: 5px;
    width: 50px;
    size: 50px;
   font-size: 30px;
+  
    
 } 
 
 
 
 .logo1 img{
-    
+    display: flex;
     position: relative;
     width: 90px;
     height: auto;
-margin-left: 400px;
-    display: flex;
-    margin-bottom: 100px;
+left: 45%;
+top: 100px;
+   
+    
     
     
     
@@ -226,7 +244,7 @@ margin-left: 400px;
     height: 1px;
     position: relative;
     background-color: rgb(238, 172, 6);
-    margin-top: 50px;
+    margin-top: 150px;
    display: flex;
   
 
@@ -238,20 +256,70 @@ margin-left: 400px;
     position: relative;
    text-align: center;
     font-family: 'Raleway', sans-serif; 
-   margin-top: 50px;
+   margin-top: 10px;
+}/*fin footer///////////////////////////*/
+header {
+   width: 100%;
+    background-color: #000;
+    position: relative;
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: flex-end;
     padding: 1.2em;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color:black;
   
 }
 navbar {
     display: flex;
+    
 }
-.categorias_productos h3{
-    font-size: 20px;
-    color: #de3c0f;
+.navbar li {
+    margin-left: 16px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5ms;
+}
+.navbar li::before {
+    content: '';
+    
+    background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
+
+
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+a, p, button {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+  
+ul, li {
+    list-style-type: none;
+}
+  
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li:hover {
+    color: #fff;
+}
+
+.navbar li:hover::before {
+    top: 50%;
+    opacity: 1;
+}
+
+.navbar a {
+    
+    padding: .7em 1.25em;
 }
