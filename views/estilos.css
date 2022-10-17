@@ -56,7 +56,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 1.2em;
     background-color: rgba(0, 0, 0, 0.308);
 }
