@@ -420,6 +420,44 @@ footer ul a {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 980px) {
+
+    .servicios-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+
+    }
+
+    .icon-container {
+        flex-wrap: wrap;
+    }
+
+    .icon-container > * {
+        flex: 1 0 80%;
+    }
+
+    .art {
+      grid-column: span 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* gap: 60px; */
+      align-items: center;
+    }
+
+    .club-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div1 {
+        margin-bottom: 2.5rem;
+    }
+
+    .div4 {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 460px) {
 
     .servicios-container {
