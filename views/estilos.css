@@ -85,40 +85,33 @@ nav {
 
 .navbar li {
     margin-left: 16px;
-    position: relative;
-    z-index: 2;
-    transition: color 0.5ms;
 }
 
-.navbar li::before {
-    content: '';
-    
-    background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
-
-
-    width: 100%;
-    height: 300%;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: top 0.5s, opacity 0.5s;
-}
-
-.navbar li:hover {
-    color: #fff;
-}
-
-.navbar li:hover::before {
-    top: 50%;
-    opacity: 1;
-}
 
 .navbar a {
+    padding: 0 .25em;
+    position: relative;
+}
+
+.navbar a.active {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
     
-    padding: .7em 1.25em;
+}
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #de3c0f;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
 }
 
 
@@ -356,13 +349,14 @@ nav {
 }
 
 .div4 a {
-    display: block;
+    display: inline-block;
     background-color: transparent;
     cursor: pointer;
     margin-top: 2rem;
     padding: .7em 1.8em;
     border: 2px solid #bd563b;
     border-radius: 50px;
+    
     
   
     font-family: 'Roboto Flex', sans-serif;;
@@ -474,8 +468,10 @@ footer ul a {
 @media screen and (max-width: 460px) {
 
     nav {
+        background-color: rgba(0, 0, 0, 0.708);
         flex-wrap: wrap;
     }
+    
     
     .navbar {
         display: none;
