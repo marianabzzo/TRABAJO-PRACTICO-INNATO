@@ -426,6 +426,26 @@ footer ul a {
     margin: 1rem 1.5rem;
 }
 
+.scrollup {
+    cursor: pointer;
+    color: #d66b4e;
+    border: 2px solid #d66b4e;
+    background: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 10;
+}
+
+.scrollup:hover {
+    background-color: #d66b4e;
+    color: #fff;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 980px) {
