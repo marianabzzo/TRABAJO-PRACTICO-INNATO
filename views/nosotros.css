@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    background: black;
+  padding: 0 50%;
+  color: #fff;
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.logo{
+    width: 80px;
+  position: absolute;
+}
