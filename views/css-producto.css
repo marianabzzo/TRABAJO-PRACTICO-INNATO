@@ -230,7 +230,7 @@ transition: all 0.5s;
 }
 .nombre_producto h3{
     font-size: 15px;
-    color: #696565;
+    color: #ef8308;
     text-align: center;
 }
 .categorias_productos .categorias{
@@ -248,94 +248,51 @@ transform: scale(1.1);
     height: 200px;
 }*/
 /*footer///////////////////////////////////////////////////*/
-footer{
-    display: block;
-    width: 100%;
-    height: 300px;
-    align-content: center;
-    align-items: center;
+footer {
     
-}
-.footer_productos{
-   
-    font-size: 12px;
-    color: rgb(113, 69, 11);
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    margin: 0;
-    height: 200px;
-   
-   
-   
-
-} 
-
-.imagen_footer{
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    margin: 0;
-    overflow: hidden;
- 
-}
-
-.transparencia{
-background-color: black;
-pacity: .8;
-width: 100%;
-height: 300px;
-position: absolute;
-}
-
-
-.iconos{
-    color: #f7cb09;
+    background-color: rgba(87, 85, 85, 0.863);
     position: relative;
-   top:  50px;
-   padding: 5px;
-   width: 50px;
-   size: 50px;
-  font-size: 30px;
-  
-   
-} 
+}
 
-
-
-.logo1 img{
+.footer-img {
     display: flex;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
     width: 90px;
-    height: auto;
-left: 45%;
-top: 100px;
-align-items: center;
+    position: absolute;
+    top: -10%;
+}
+
+footer ul {
+    padding-top: 5rem;
+    list-style: none;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.sociales a {
+    color: rgb(238, 134, 7);
+    font-size: 2rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
    
-    
-    
-    
-    
-}
-.linea{
-    width: 100%;
-    height: 1px;
-    position: relative;
-    background-color: rgb(238, 172, 6);
-    margin-top: 150px;
-   display: flex;
-  
-
 }
 
-
-.copyrigth{
-    color: #f7cb09;
-    position: relative;
-   text-align: center;
-    font-family: 'Raleway', sans-serif; 
-   margin-top: 10px;
-}/*fin footer///////////////////////////*/
-
-
+.footer-flex li,
+.sociales a {
+    margin: 1rem 1.5rem;
+}
 
