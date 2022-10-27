@@ -33,6 +33,17 @@ header{
    
    
 }
+.checkbtn{
+    color: white;
+    float: right;
+
+    
+    
+}
+#check{
+    display: none;
+}
+
 .header .navbar .nav-link{
     list-style: none;
      align-items: center;
