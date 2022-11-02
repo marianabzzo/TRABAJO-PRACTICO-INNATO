@@ -90,9 +90,11 @@ ul, li {
 article .info{
     font-family:  'Roboto Flex', sans-serif;
     text-align: justify;
+  
 }
 .info{
-    text-align: justify;
+    text-align: justify; 
+    margin-right: 40px;
 }
 
 /*SLIDER-----------------------------------------*/
@@ -100,14 +102,16 @@ article .info{
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 125px;
    
 }
 .slider ul{
     padding: 0%;
     display: flex;
-    width: 300%;
-    animation: slide 10s infinite;
+    width: 400%;
+
+    animation: slide 20s infinite alternate;
+    animation-timing-function: linear;
 
 }
 .slider li{
@@ -116,18 +120,24 @@ article .info{
 }
 .slider li img{
     width: 700px;
+    height: 300px;
 
 
 }
-@keyframes slide{
-    0%{ margin-left: 0%;}
-    30%{ margin-left: 0%;}
-    
-    35%{ margin-left: -100%;}
-    60%{ margin-left: -100%;}
 
-    66%{ margin-left: -200%;}
-    100%{ margin-left: -200%;}
+@keyframes slide{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+    
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+
 
 
 
@@ -139,7 +149,8 @@ article .info{
 
 .club{
     margin-top: 50px;
-    text-align: center;
+    text-align: center; 
+    
 }
 strong{
     color: rgb(238, 78, 10);
@@ -151,7 +162,36 @@ strong{
     
     padding: 30px;
 }
-/*.div2 {
+.club .forma{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(238, 78, 10);
+   /* opacity: 0.7;*/
+    position: relative;
+    margin-left: 60%;
+    bottom: 370px;
+    border-radius: 0 50px 0 0;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2.5rem;
+    font-family:  'Roboto Flex', sans-serif;
+  
+}
+.parrafo-forma p{
+   
+    
+    
+    
+    margin: 50%;
+   
+  
+}
+/*.club-tarjeta img:hover{
+
+}
+.div2 {
     background-color: #d66b4e;
     border-radius: 0px 150px 0px 0px;*/
 
