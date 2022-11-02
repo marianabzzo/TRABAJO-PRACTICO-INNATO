@@ -38,10 +38,8 @@ header {
     align-items: flex-end;
     
 }
- li a:hover{
-    color: #e69508;
-
-   
+.nav-bar-link{
+    
 }
 .nav-bar a{
    
@@ -103,55 +101,33 @@ article .info{
     height: auto;
     overflow: hidden;
     margin-top: 100px;
-   /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
-   
-    background-color: #e69508;*/
-
    
 }
-.color{
-    background-color: #e69508
-}
-
 .slider ul{
     padding: 0%;
     display: flex;
-    width: 400%;
+    width: 300%;
+    animation: slide 20s infinite;
 
-    animation: slide 10s infinite alternate;
-    animation-timing-function: linear;
 }
 .slider li{
     list-style: none;
     width: 100%;
 }
 .slider li img{
-    width: 100%;
-    height: auto;
-    background-size: cover;
+    width: 700px;
 
 
 }
-.slider p{
-   
-}
-
-   
-
-  
 @keyframes slide{
     0%{ margin-left: 0;}
-    20%{ margin-left: 0;}
+    30%{ margin-left: 0;}
     
-   25%{ margin-left: -100%;}
-    45%{ margin-left: -100%;}
+    35%{ margin-left: -100;}
+    60%{ margin-left: -100;}
 
-    50%{ margin-left: -200%;}
-    70%{ margin-left: -200%;}
-
-    75%{ margin-left: -300%;}
-    100%{ margin-left: -300%;}
-
+    66%{ margin-left: -200;}
+    100%{ margin-left: -200;}
 
 
 
