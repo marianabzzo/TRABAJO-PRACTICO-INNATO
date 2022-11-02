@@ -56,6 +56,9 @@ header {
 ul, li {
     list-style-type: none;
 }
+.header-container .nav-bar li a:hover{
+    color: rgb(242, 137, 9);
+}
 #check{
     display: none;
 }
@@ -65,19 +68,31 @@ ul, li {
     font-size: 1.5rem;
    display: none;
 }
-
+/*-----------imagen de cabecera-----*/
 .imagen-cabecera{
-
+  background-color: rgb(232, 237, 237);
+  position: relative;
+   
 }
 .imagen-cabecera img{
     
    width: 1200px;
    height: auto;
+   
 }
 .img-cab{
     display: flex;
     margin: 0% auto;
+   
 }/*
+.imagen-cabecera .texto-imagen-vabecera{
+    position: absolute;
+    align-items: center;
+}
+
+
+
+/*
 .main-contenido{
     background-color: aqua;
 }*/
