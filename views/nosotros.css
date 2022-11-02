@@ -194,6 +194,11 @@ strong{
     font-family:  'Roboto Flex', sans-serif;
   
 }
+.club-texto{
+    font-family:  'Roboto Flex', sans-serif;
+    font-size: 2rem;
+}
+/*
 .parrafo-forma p{
    
     
@@ -203,7 +208,7 @@ strong{
    
   
 }
-/*.club-tarjeta img:hover{
+.club-tarjeta img:hover{
 
 }
 .div2 {
