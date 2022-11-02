@@ -94,6 +94,49 @@ article .info{
 .info{
     text-align: justify;
 }
+
+/*SLIDER-----------------------------------------*/
+.slider{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+   
+}
+.slider ul{
+    padding: 0%;
+    display: flex;
+    width: 300%;
+    animation: slide 20s infinite;
+
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider li img{
+    width: 700px;
+
+
+}
+@keyframes slide{
+    0%{ margin-left: 0;}
+    30%{ margin-left: 0;}
+    
+    35%{ margin-left: -100;}
+    60%{ margin-left: -100;}
+
+    66%{ margin-left: -200;}
+    100%{ margin-left: -200;}
+
+
+
+
+
+}
+
+/*SLIDER-----------------------------------------*/
+
 .club{
     margin-top: 50px;
     text-align: center;
