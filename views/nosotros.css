@@ -232,9 +232,27 @@ h2{
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
-
-
-
+/*---------------------------video*/
+.video{
+    width: 1200px;
+    margin: auto;
+   
+    margin-bottom: 100px;
+   
+    
+   
+}
+video{
+    width: 100%;
+   margin-bottom: 100px;
+   
+   
+ 
+}
+.video h2{
+    text-align: center;
+}
+/*--------footer------------------------*/
 footer {
     
     background-color: rgba(87, 85, 85, 0.863);
