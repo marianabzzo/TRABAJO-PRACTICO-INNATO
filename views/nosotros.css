@@ -165,6 +165,7 @@ article .info{
 .club{
     margin-top: 50px;
     text-align: center; 
+   
     
 }
 strong{
@@ -197,7 +198,40 @@ strong{
 .club-texto{
     font-family:  'Roboto Flex', sans-serif;
     font-size: 2rem;
+    margin-top: -20px;
+   
 }
+
+.club-texto-beneficios {
+    font-size: 1.5rem;
+    color: rgb(90, 94, 94);
+    padding: 20px;
+    
+}
+
+.club-ofrece{
+    margin-top: 40px;
+    
+}
+/*
+.circulo{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 5px solid rgb(238, 78, 10);
+    margin: auto;
+   
+    
+
+}
+.club .invitacion .beneficios{
+    font-size: 2rem;
+    color: rgb(76, 78, 80);
+    padding: 20px;
+    
+   
+}*/
+
 /*
 .parrafo-forma p{
    
@@ -236,21 +270,21 @@ h2{
 .video{
     width: 1200px;
     margin: auto;
-   
-    margin-bottom: 100px;
-   
     
-   
 }
 video{
     width: 100%;
-   margin-bottom: 100px;
-   
-   
+    margin-bottom: 100px;
+      
  
 }
 .video h2{
     text-align: center;
+   
+}
+.video .titulo-video{
+    color: rgb(83, 81, 81);
+    padding-bottom: 100px;
 }
 /*--------footer------------------------*/
 footer {
