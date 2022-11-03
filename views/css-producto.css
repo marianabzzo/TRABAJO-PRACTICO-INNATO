@@ -14,68 +14,79 @@ body{
   
 }
 /*------------------header y nav----------------------------*/
-header{
-    background-color: black;
+header {
     display: flex;
+    color: rgb(210, 40, 40);
+    height: 85px;
     justify-content: space-between;
+    background: black;
+    
     align-items: center;
-    height: 70px;
-    padding: 5px ;
-    font-family: 'Raleway', sans-serif;
-     margin: 0;
-     flex-wrap: wrap;
+    
 }
-.header .logo_innato img{
+.header-container{
+  
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+   
+}
+
+
+.header-nav-logo{
     width: 70px;
     height: auto;
- margin-bottom:  5px;
- margin-left: 30px;
-   
+    
+   margin-left: 50px;
    
 }
-.checkbtn{
-    color: white;
-    float: right;
 
+.nav-bar{
+    display: flex;
+    align-items: flex-end;
     
+}
+.nav-bar-link{
     
+}
+.nav-bar a{
+   
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+   align-items: flex-end;
+    list-style: none; 
+    list-style-type: none;
+    margin-right: 30px;
+    
+}
+
+ul, li {
+    list-style-type: none;
+}
+.header-container .nav-bar li a:hover{
+    color: rgb(242, 137, 9);
 }
 #check{
     display: none;
 }
-
-.header .navbar .nav-link{
-    list-style: none;
-     align-items: center;
-    
+.check_btn{
+    color: rgb(242, 137, 9);
+    cursor: pointer;
+    font-size: 1.5rem;
+   display: none;
 }
-  
-.header .navbar li{
-    display: inline-block;
-    padding: 0 10px;
-   margin-bottom: 10px;
-    align-items: inherit;
-    
-}
-
-.header .navbar li a:hover{
-    color: #e69508;
-
-}
-
-.header .navbar a{
-    font-size: 1em;
-    color: white;
-    text-decoration: none;
-   
-}
-
-
 
 /*--------------fin header----------------------------------*/
 
 
 /*---------------------imagenes para eleccion del catalogo-------------*/
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
 .bajada{
     font-family: 'Raleway', sans-serif;
    width: 90%;
@@ -106,8 +117,8 @@ flex-direction: row;
 
 .titulo_1{
     width: 100%;
-    height: 100px;
-    color:#fff;
+    height: 200px;
+    color:rgb(2, 1, 1);
     background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
     background-size: 200% 200%;
     display: flex;
