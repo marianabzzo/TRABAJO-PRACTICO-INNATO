@@ -175,8 +175,9 @@ strong{
     width: 600px;
     height: auto;
     cursor: pointer;
-    
+    position: relative;
     padding: 30px;
+    z-index: 1;
 }
 .club .forma{
     width: 200px;
@@ -198,6 +199,7 @@ strong{
 .club-texto{
     font-family:  'Roboto Flex', sans-serif;
     font-size: 2rem;
+    position: relative;
     margin-top: -20px;
    
 }
@@ -250,7 +252,7 @@ strong{
     border-radius: 0px 150px 0px 0px;*/
 
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h2{
     font-family: 'Raleway', sans-serif;
@@ -274,7 +276,8 @@ h2{
 }
 video{
     width: 100%;
-    margin-bottom: 100px;
+    position: relative;
+    top: -200px;
       
  
 }
@@ -285,6 +288,8 @@ video{
 .video .titulo-video{
     color: rgb(83, 81, 81);
     padding-bottom: 100px;
+    position: relative;
+   top: -200px;
 }
 /*--------footer------------------------*/
 footer {
