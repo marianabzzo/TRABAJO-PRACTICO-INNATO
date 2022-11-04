@@ -290,7 +290,7 @@ nav {
 .btn {
     
     color: #fff;
-    background-color: #d66b4e;
+    background-color: #ee4e0a;
     border-radius: 30px;
     padding: .3em 1.5em;
 }
@@ -328,7 +328,7 @@ nav {
 }
 
 .div2 {
-    background-color: #d66b4e;
+    background-color: #ee4e0a;
     border-radius: 0px 150px 0px 0px;
 }
 
@@ -355,13 +355,13 @@ nav {
     cursor: pointer;
     margin-top: 2rem;
     padding: .7em 1.8em;
-    border: 2px solid #bd563b;
+    border: 2px solid #ee4e0a;
     border-radius: 50px;
     
     
   
     font-family: 'Roboto Flex', sans-serif;;
-    color: #bd563b;
+    color: #ee4e0a;
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -428,9 +428,9 @@ footer ul a {
 
 .scrollup {
     cursor: pointer;
-    color: #d66b4e;
-    border: 2px solid #d66b4e;
-    background: none;
+    color: #fff;
+    background-color: #ee4e0a;
+    border: 2px solid #ee4e0a; 
     border-radius: 4px;
     font-size: 1.2rem;
     padding: 10px;
@@ -441,10 +441,7 @@ footer ul a {
     z-index: 10;
 }
 
-.scrollup:hover {
-    background-color: #d66b4e;
-    color: #fff;
-}
+
 
 
 /* CONTACTO */
