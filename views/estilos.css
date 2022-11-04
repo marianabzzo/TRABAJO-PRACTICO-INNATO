@@ -447,7 +447,7 @@ footer ul a {
 /* CONTACTO */
 
 #contacto{
-    padding: 3em 2em;
+    padding: 5em 2em;
 }
 .contacto-container {
     position: relative;
@@ -483,8 +483,10 @@ footer ul a {
     grid-area: info;
 
     border-radius: 20px;
-    background-color: #d66b4e;
+    background-color: #ee4e0a;
     color: #fff; 
+    font-weight: 700;
+    letter-spacing: 1px;
     padding: 3em;
 
     flex-direction: column;
@@ -533,7 +535,7 @@ input, textarea {
 }
 
 input[type="submit"] {
-    background-color: #de3c0f;
+    background-color: #ee4e0a;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
