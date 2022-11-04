@@ -24,14 +24,28 @@
 
 </head>
 <body>
+    
+  <header class="container">
+
     <nav>
-        <a class="nav-link" href="#home">inicio</a>
-       <a class="nav-link" href="#productos">productos</a>
-       <a class="nav-link" href="#club">club</a>
-       <a class="nav-link" href="#about">nosotros</a>
-       <a class="nav-link" href="./contacto.html">contacto</a>
-       
-    </nav>
+        
+      <a href="#" class="logo">Innato</a>
+      <button class="hamburger" id="hamburger">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="navbar">
+        <li><a class="nav-link active" href="./index.html">inicio</a></li>
+        <li><a class="nav-link" href="./productos.html">productos</a></li>
+        <li><a class="nav-link" href="./club.html">club</a></li>
+        <li><a class="nav-link" href="./nosotros.html">nosotros</a></li>
+        <li><a class="nav-link" href="./contacto.html">contacto</a></li>
+          
+      </ul>
+        
+    </nav>   
+
+  </header>
 
     <main>
 
@@ -39,21 +53,26 @@
 
             <div class="contacto-container">
               <div class="form">
-                <h2>contactanos</h2>
-                <form action="">
+                <div class="titulo">
+                  <h2>contactanos</h2>
+                  <p class="error"></p>
+                </div>
+                <form name="form-contact" method="POST" data-netlify="true" id="formulario">
                   <div class="control">
-                    <label for="name">nombre</label>
-                    <input type="text" name="name" id="name">
-                    <small></small>
+                    <label for="nombre">nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    
                   </div>
                   <div class="control">
                     <label for="email">email</label>
                     <input type="text" name="email" id="email">
-                    <small></small>
+                    
                   </div>
-                  <label for="message"></label>
-                  <textarea name="message" id="message"  placeholder="Dejanos tu mensaje o pregunta." cols="30" rows="10"></textarea>
-                  <input type="submit" value="enviar">
+                  <div class="control">
+                    <label for="message"></label>
+                    <textarea name="message" id="message"  placeholder="Dejanos tu mensaje o pregunta." cols="30" rows="10"></textarea>
+                  </div>
+                  <input type="submit" value="enviar" id="submit-btn">
       
                 </form>
               </div>
@@ -82,7 +101,27 @@
     </main>
 
     <footer>
-
+      <section class="container">
+        <div class="footer-img">
+          <img src="./imagenes/LOGO.png" alt="logo" class="footer-logo">
+        </div>
+        
+          <ul class="footer-flex">
+            <li><a href="#home">inicio</a></li>
+            <li><a href="./productos.html">productos</a></li>
+            <li><a href="./club.html">club</a></li>
+            <li><a href="./contacto.html">nosotros</a></li>
+            <li><a href="./contacto.html">contacto</a></li>
+          </ul>
+        
+        <div class="sociales footer-flex">
+          <a href="https://es-la.facebook.com"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com"><i class="	fa fa-instagram"></i></a>
+          <a href="https://twitter.com"><i class="	fa fa-twitter-square"></i></a>
+          <a href="https://ar.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+      </section>
+  
     </footer>
 
     <script src="./js/script.js"></script>

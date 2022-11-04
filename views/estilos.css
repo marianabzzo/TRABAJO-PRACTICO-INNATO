@@ -447,7 +447,7 @@ footer ul a {
 /* CONTACTO */
 
 #contacto{
-    padding: 3em 2em;
+    padding: 5em 2em;
 }
 .contacto-container {
     position: relative;
@@ -464,6 +464,17 @@ footer ul a {
     
 }
 
+.error {
+    display: inline-block;
+    color: red;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .form {
     grid-area: form;
     /* border: 2px solid #333; */
@@ -474,17 +485,15 @@ footer ul a {
 
 }
 
-.control small {
-    display: block;
-    visibility: hidden;
-}
 
 .info {
     grid-area: info;
 
     border-radius: 20px;
-    background-color: #d66b4e;
+    background-color: #ee4e0a;
     color: #fff; 
+    font-weight: 700;
+    letter-spacing: 1px;
     padding: 3em;
 
     flex-direction: column;
@@ -532,8 +541,13 @@ input, textarea {
     box-sizing: border-box;
 }
 
+input:focus,
+textarea:focus {
+    border: 2px solid #ee4e0a; 
+}
+
 input[type="submit"] {
-    background-color: #de3c0f;
+    background-color: #ee4e0a;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -601,6 +615,17 @@ iframe {
     .div4 {
         text-align: center;
     }
+
+    .contacto-container {
+        grid-template-rows: 50% 30%;
+        grid-template-areas: 
+        "form form"
+        "info mapa";
+    }
+
+    .footer-navbar {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -651,5 +676,14 @@ iframe {
 
     .div4 {
         text-align: center;
+    }
+
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo {
+        flex-direction: column;
     }
 }
