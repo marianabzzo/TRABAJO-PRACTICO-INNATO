@@ -539,11 +539,12 @@ input, textarea {
     border-radius: .3em;
     border: 1px solid gray;
     box-sizing: border-box;
+    outline: none;
 }
 
 input:focus,
 textarea:focus {
-    border: 2px solid #ee4e0a; 
+    border: 2px solid lightskyblue; 
 }
 
 input[type="submit"] {
