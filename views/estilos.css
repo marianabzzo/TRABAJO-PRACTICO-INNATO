@@ -464,6 +464,17 @@ footer ul a {
     
 }
 
+.error {
+    display: inline-block;
+    color: red;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .form {
     grid-area: form;
     /* border: 2px solid #333; */
@@ -474,10 +485,6 @@ footer ul a {
 
 }
 
-.control small {
-    display: block;
-    visibility: hidden;
-}
 
 .info {
     grid-area: info;
@@ -532,6 +539,11 @@ input, textarea {
     border-radius: .3em;
     border: 1px solid gray;
     box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #ee4e0a; 
 }
 
 input[type="submit"] {
@@ -603,6 +615,17 @@ iframe {
     .div4 {
         text-align: center;
     }
+
+    .contacto-container {
+        grid-template-rows: 50% 30%;
+        grid-template-areas: 
+        "form form"
+        "info mapa";
+    }
+
+    .footer-navbar {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -653,5 +676,14 @@ iframe {
 
     .div4 {
         text-align: center;
+    }
+
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo {
+        flex-direction: column;
     }
 }
