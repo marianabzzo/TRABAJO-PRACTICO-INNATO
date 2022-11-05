@@ -44,7 +44,7 @@ img {
     margin: 0 auto;
 }
   
-header {
+.navigation {
     min-height: 100vh;
     /* background-color: #000; */
     background-image: url(./imagenes/hero-img.jpg), url(./imagenes/hero-img.jpg);
@@ -385,7 +385,8 @@ nav {
 
 footer {
     
-    background-color: rgba(87, 85, 85, 0.863);
+    /* background-color: rgba(87, 85, 85, 0.863); */
+    background-color: #000;
     position: relative;
 }
 
@@ -410,7 +411,7 @@ footer ul a {
 }
 
 .sociales a {
-    color: #fff;
+    color: rgb(238, 134, 7);
     font-size: 2rem;
 }
 
@@ -445,6 +446,40 @@ footer ul a {
 
 
 /* CONTACTO */
+
+.contacto-header {
+    background-color: #000;
+    height: 85px;
+    padding: 10px;
+   
+}
+
+.contacto-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+
+.contacto-logo {
+    width: 70px;
+    height: auto;
+    margin-left: 45px;
+}
+
+.contacto-nav-link {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    align-items: flex-end;
+    list-style: none;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+
 
 #contacto{
     padding: 5em 2em;
@@ -632,7 +667,8 @@ iframe {
 @media screen and (max-width: 460px) {
 
     nav {
-        background-color: rgba(0, 0, 0, 0.708);
+        /* background-color: rgba(0, 0, 0, 0.708); */
+        background-color: #000;
         flex-wrap: wrap;
     }
     
