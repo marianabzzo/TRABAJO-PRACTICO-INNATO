@@ -1,20 +1,101 @@
 
 
-body{
+*{
     margin: 0;
     padding: 0;
     /*background-image: linear-gradient(to top, #cfd9df 0%, #3e4041 100%);*/
     margin: 0;
-    height: 100vw;
+   
+    box-sizing: border-box;
+   
+   
+    
    /* background-repeat: no-repeat;
     background-size: cover;*/
   
   
 }
+/*------------------header y nav----------------------------*/
+header {
+    display: flex;
+    color: rgb(210, 40, 40);
+    height: 85px;
+    justify-content: space-between;
+    background: black;
+    
+    align-items: center;
+    font-family:  'Roboto Flex', sans-serif;
+    
+}
+.innato{
+    color: #fff;
+}
+.header-container{
   
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+   
+}
+
+
+.header-nav-logo{
+    width: 70px;
+    height: auto;
+    
+   margin-left: 50px;
+   
+}
+
+.nav-bar{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.nav-bar-link{
+    
+}
+.nav-bar a{
+   
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+   align-items: flex-end;
+    list-style: none; 
+    list-style-type: none;
+    margin-right: 30px;
+    
+}
+
+ul, li {
+    list-style-type: none;
+}
+.header-container .nav-bar li a:hover{
+    color: rgb(242, 137, 9);
+}
+#check{
+    display: none;
+}
+.check_btn{
+    color: rgb(242, 137, 9);
+    cursor: pointer;
+    font-size: 1.5rem;
+   display: none;
+}
+
+/*--------------fin header----------------------------------*/
+
+
+/*---------------------imagenes para eleccion del catalogo-------------*/
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
 .bajada{
     font-family: 'Raleway', sans-serif;
-   width: 90%;
+   width: 80%;
    margin-top: 50px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -22,12 +103,13 @@ body{
   text-align: center;
   text-decoration: none;
   
+  
  
 }
 
 .container_productos{
     width: 80%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 10px auto;
     display: flex;
     justify-content: center;
@@ -42,8 +124,8 @@ flex-direction: row;
 
 .titulo_1{
     width: 100%;
-    height: 100px;
-    color:#fff;
+    height: 200px;
+    color:rgb(2, 1, 1);
     background-image: linear-gradient(120deg, #f6d365, #de3c0f, #d66b4e, #deb50f );
     background-size: 200% 200%;
     display: flex;
@@ -57,13 +139,14 @@ flex-direction: row;
 strong{
     color: rgb(238, 78, 10);
 }
+/*-------------gradient con animacion-------------*/
 @keyframes cambiar{
     0%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
     100%{background-position: 0% 50%;}
 
 }
-
+/*------------- fin gradient con animacion-------------*/
 .seleccion_producto{
    position: relative;
    margin: 15px;
@@ -85,8 +168,9 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     position: absolute;
     
     width: 100%;
-    height: 87%;
-    background: rgba(244, 185, 10, 0.891);
+    height: 100%;
+    background: rgba(244, 127, 10, 0.891);
+    border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,11 +178,17 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     transition: .3s ease;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+    text-decoration: none;
     
+}
+.seleccion_producto .titulo_seleccion{
+transition: all 0.5s;
 }
 .seleccion_producto:hover .titulo_seleccion{
     transform: scale(1);} 
+/*-------------------fin de imagen eleccion----------------*/
 
+/*------------------------------galeria-----------------------------*/
 .separador{
     width: 100%;
     height: 40px;
@@ -108,25 +198,29 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     display: flex;
     justify-content: center;
     align-items: center;
+    
+   /* border: 3px solid rgb(240, 111, 5);*/
+    border-radius: 20px;
 }
 .nombre_categoria{
-    color: #fff;
+    color: rgb(34, 33, 33);
     font-family: 'Raleway', sans-serif;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
     
 }
 .categorias_productos{
     width: 80%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 20px auto;
     display: flex;
     justify-content: space-around;
     overflow: hidden;
     flex-wrap: wrap;
-   
+    cursor: pointer;
+ 
 
    
 
@@ -149,68 +243,79 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     height: auto;
     
 }
-.nombre_producto{
+.nombre_producto {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-family: 'Raleway', sans-serif; 
+    font-size: 1em;
+    color: rgb(80, 77, 77);
   
 }
-
-.futuro nav{
-    width: 100%;
-    height: 200px;
-    background-color: #4a4544;
+.nombre_producto h3{
+    font-size: 15px;
+    color: #ef8308;
+    text-align: center;
 }
+.categorias_productos .categorias{
+    transition: all 0.3s;
+}
+.categorias_productos .categorias:hover{
+transform: scale(1.1);
+}
+
+
 /*
 .footer_productos{
     background-color: rgb(15, 14, 14);
     width: 100%;
     height: 200px;
 }*/
-.footer_productos{
-    background-color: black;
-    font-size: 12px;
-    color: antiquewhite;
-    text-align: center;
-    width: 100%;
+/*footer///////////////////////////////////////////////////*/
+footer {
+    
+    background-color: rgba(87, 85, 85, 0.863);
+    position: relative;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 90px;
     position: absolute;
-    margin: 0;
-    height: 200px;
-    margin-top: 0;
-
+    top: -10%;
 }
-/*agregue posición relativa para poder mover los iconos*/
-.iconos{
-    color: rgb(236, 171, 8);
-    position: relative;
-   top:  50px;
-   padding: 5px;
-   width: 50px;
-   size: 50px;
-  
+
+footer ul {
+    padding-top: 5rem;
+    list-style: none;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.sociales a {
+    color: rgb(238, 134, 7);
+    font-size: 2rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
    
-} 
+}
 
+.footer-flex li,
+.sociales a {
+    margin: 1rem 1.5rem;
+}
 
-.copyrigth{
-    color: #f5f7fa;
-    position: relative;
-    text-align: center;
-    font-family: 'Raleway', sans-serif; 
-    top: 100px;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 1.2em;
-    background-color: rgba(0, 0, 0, 0.308);
-  
-}
-navbar {
-    display: flex;
-}
-.categorias_productos h3{
-    font-size: 20px;
-    color: #de3c0f;
-}
