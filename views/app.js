@@ -2,20 +2,34 @@ let comprar = confirm("¿Deseas unirte al Mi Club?")
 
 let click = true;
 
-const aplicacion = document.querySelector ('.container1')
-const url = 'https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre'
+async function getProvincias(){
+let response  = await fetch('https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre')
+let data = await response.json()
 
-fetch(url)
-.then(Response => Response.json())
-.then(function (provincias) {
-  provincias.forEach(function(provincia) {
-    const p = document.createElement('p');
-    p.innerHTML = provincia.nombre;
-    aplicacion.appendChild(p);
-  });
+console.log(data);
+}
 
-})   
-.catch(err => console.log(err))
+getProvincias()
+
+const $form = document.querySelector('form');
+const $input = document.querySelector('#input');
+const $submit = document.querySelector('#submit');
+const $results = document.querySelector('#results');
+
+$form.addEventListener('submit', async function(event){
+  event.preventDefault();
+  const {valor} = $input;
+
+  if(!valor)return
+
+  $submit.setAttribute('disabled', '');
+
+  let dataFetcthForm = await fetchForm (valor);
+
+  if (dataFetcthForm){
+  $results.innerHTML = JSON.stringify(dataFetcthForm, null,2);
+  }
+
 
 
 
