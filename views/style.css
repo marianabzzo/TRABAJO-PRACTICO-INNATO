@@ -19,6 +19,9 @@ header {
   
     max-width: 1200px;
     margin: 0 auto;
+   
+
+   
 }
 
 
@@ -27,13 +30,43 @@ header {
     height: auto;
     
    margin-left: 50px;
+   
 }
 
+.nav-bar{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.nav-bar-link{
+    
+}
+.nav-bar a{
+   
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+   align-items: flex-end;
+    list-style: none; 
+    list-style-type: none;
+    margin-right: 30px;
+    
+}
 
-
-
+ul, li {
+    list-style-type: none;
+}
 .header-container .nav-bar li a:hover{
     color: rgb(242, 137, 9);
+}
+#check{
+    display: none;
+}
+.check_btn{
+    color: rgb(242, 137, 9);
+    cursor: pointer;
+    font-size: 1.5rem;
+   display: none;
 }
 
 body{
