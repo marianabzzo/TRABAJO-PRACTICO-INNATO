@@ -29,7 +29,7 @@ $form.addEventListener('submit', async function(event){
   if (dataFetcthForm){
   $results.innerHTML = JSON.stringify(dataFetcthForm, null,2);
   }
-
+})
 
 
 
