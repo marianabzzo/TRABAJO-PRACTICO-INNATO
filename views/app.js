@@ -25,6 +25,7 @@ $form.addEventListener('submit', async function(event){
   $submit.setAttribute('disabled', '');
 
   let dataFetcthForm = await fetchForm (valor);
+  console.log(dataFetcthForm)
 
   if (dataFetcthForm){
   $results.innerHTML = JSON.stringify(dataFetcthForm, null,2);
