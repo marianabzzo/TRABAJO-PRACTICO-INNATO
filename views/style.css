@@ -1,4 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto Flex', sans-serif;
+}
 
+header {
+    display: flex;
+    color: rgb(210, 40, 40);
+    height: 85px;
+    justify-content: space-between;
+    background: black;
+    
+    align-items: center;
+    
+}
+.header-container{
+  
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header-nav-logo{
+    width: 70px;
+    height: auto;
+    
+   margin-left: 50px;
+}
+
+
+
+
+.header-container .nav-bar li a:hover{
+    color: rgb(242, 137, 9);
+}
 
 body{
     margin: 0;
@@ -161,4 +197,51 @@ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
     background-color: rgb(15, 14, 14);
     width: 100%;
     height: 200px;
+}
+footer {
+    
+    background-color: rgba(87, 85, 85, 0.863);
+    position: relative;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 90px;
+    position: absolute;
+    top: -10%;
+}
+
+footer ul {
+    padding-top: 5rem;
+    list-style: none;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.sociales a {
+    color: rgb(238, 134, 7);
+    font-size: 2rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.footer-flex li,
+.sociales a {
+    margin: 1rem 1.5rem;
 }
