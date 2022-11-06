@@ -2,11 +2,14 @@ let comprar = confirm("¿Deseas unirte al Mi Club?")
 
 let click = true;
 
-const fetchForm = (provincia) => {
-  return fetch ('https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre${provincia}')
-  .then (Response => Response.json())
-  .catch (error => console.log (error))
+async function getProvincias(){
+let response  = await fetch('https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre')
+let data = await response.json()
+
+console.log(data);
 }
+
+getProvincias()
 
 const $form = document.querySelector('form');
 const $input = document.querySelector('#input');
@@ -35,13 +38,8 @@ $form.addEventListener('submit', async function(event){
 
 if (click) {
   document.querySelector('p2').classList.add('nombreMiClub');
-}
+  }
 Swal.fire({
     title: '¡Genial!',
     text: 'Llena el siguiente formulario',
-    imageUrl: 'C:\Users\pc\Desktop\Codo a Codo\trabajo grupal\TRABAJO-PRACTICO-INNATO\views\imagenes\LOGO.png',
-    imageWidth: 400,
-    imageHeight: 200,
-    imageAlt: 'Custom image',
-  });
- 
+});
