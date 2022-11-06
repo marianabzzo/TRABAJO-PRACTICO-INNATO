@@ -41,7 +41,7 @@ header {
 
 
 .header-nav-logo{
-    width: 70px;
+    width: 90px;
     height: auto;
     
    margin-left: 50px;
@@ -273,7 +273,7 @@ transform: scale(1.1);
 /*footer///////////////////////////////////////////////////*/
 footer {
     
-    background-color: rgba(87, 85, 85, 0.863);
+    background-color: black;
     position: relative;
 }
 
@@ -284,7 +284,7 @@ footer {
 }
 
 .footer-logo {
-    width: 90px;
+    width: 100px;
     position: absolute;
     top: -10%;
 }
