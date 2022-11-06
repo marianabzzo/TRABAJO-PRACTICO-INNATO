@@ -68,31 +68,41 @@
  </header>
   <body>
     
-    <div class="futuro nav"><nav></nav></div>
+  
 
     <h1 class="titulo_1">Mi Club</h1>
     <div class="bajada"><p>Unite al club de<strong> INNATO </strong> y recibí todas nuestras promociones
          </p><p2>¡No te quedes afuera!</p2></div>
     <div>
 
-      <h1>Formulario</h1>
-        <div class="container">      
+    <div class="container">
+      <h1 class = "titulo_1">Formulario</h1>
+        <div class="bajada">      
           <form action="validar.html" method="get" id="Formulario">
-            
+            <div class="container_productos">
             <input type="text" id="nombre" name="Nombre" placeholder="Nombre y Apellido" required>
             <br>
+            </div>
+            <div class="container_productos">
             <input type="email" id="email" name="Email" placeholder="Email" required>
             <br>
+            </div>
+            <div class="container_productos">
             <input type="edad" id="edad" name="Email" placeholder="Edad" min="1" max="99">
             <br>
+            </div>
+            <div class="container_productos">
             <input type="text" id="provincia"placeholder= "Ingresar provincia">
             </label>
             <br>
+            </div>
+            <div class="container_productos">
             <button type="submit" id="submit">Buscar provincia</button>
             <div class = '.container1'>
               
             </div>
             <br>  
+            </div>
 
             <fieldset>
               <legend>Género</legend>
@@ -137,7 +147,7 @@
     
       </footer>
 
-         
+    </div>   
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./app.js"></script>
   </body>
