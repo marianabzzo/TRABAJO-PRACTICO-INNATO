@@ -30,8 +30,6 @@ $form.addEventListener('submit', async function(event){
   $results.innerHTML = JSON.stringify(dataFetcthForm, null,2);
   }
 
-  $submit.removeAttribute('disabled'); 
-})
 
 
 

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gourmet, fiambre, vinos, aceite, delicatessen">
+    <meta name="description" content="Tienda gourmet">
     <title>INNATO</title>
     <link rel="stylesheet" href="./css-producto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +14,50 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
- 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91b62dc49c.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body> 
 
+ <header class="header-container">
+       
 
-   <div class="futuro nav"><nav></nav></div>
+      
 
+    <a href="./index.html" class="header-nav-enlace">
+      <img src="./imagenes/isologotipo3.svg" alt="innato tienda gourmet" class="header-nav-logo"></a>
+
+      <p class="innato">INNATO tienda gourmet</p>
+      
+    <input type="checkbox" id="check">
+    <label for="check" class="check_btn">
+     <i class="fa fa-bars"></i>
+    </label>
+
+
+    <nav>
+ 
+         <ul class="nav-bar">
+             <li><a class="nav-bar-link" href="./index.html">Inicio</a></li>
+             <li><a class="nav-bar-link" href="./productos.html">Productos</a></li>
+             <li><a class="nav-bar-link" href="./club.html">Club</a></li>
+ 
+             <li><a class="nav-bar-link" href="./nosotros.html">Nosotros</a></li>
+             <li><a class="nav-bar-link" href="./contacto.html">Contacto</a></li>
+             
+         </ul>
+     </nav>
+
+    
+ </header>
+
+<main>
     <h1 class="titulo_1">Nuestro catálogo</h1>
     <div class="bajada"><p>En <strong> INNATO </strong>podés encontrar una gran variedad de productos importados, vinos, cáfe, aceites, especias, aderezos, delicatessen  de todo el mundo
          </p></div>
@@ -28,30 +67,54 @@
   <section class="container_productos">
 
 
-<div class="seleccion_producto"> <img src="./imagenes de productos/vino.png" alt="vinos nacionales e importados">
-    <p class="titulo_seleccion">Vinos</p> </div>
-<div class="seleccion_producto"> <img src="./imagenes de productos/aceite.png" alt="aceite nacionales e importados">
-     <p class="titulo_seleccion">Aceite</p> </div>
-<div class="seleccion_producto"> <img src="./imagenes de productos/cafe.png" alt="cafe nacionales e importados">
-    <p class="titulo_seleccion">Café</p> </div>
-<div class="seleccion_producto"> <img src="./imagenes de productos/especias.png" alt="especias nacionales e importados">
-    <p class="titulo_seleccion">Especias</p> </div>
- <div class="seleccion_producto"> <img src="./imagenes de productos/picada.png" alt="Las más ricas picadas">
-    <p class="titulo_seleccion">Picadas</p> </div>
-    
+
+<div class="seleccion_producto">
+    <img src="./imagenes de productos/vino.png" alt="vinos nacionales e importados"></a>
+    <a class="titulo_seleccion" href="#vinos">vinos</a>
+   
+</div>
+<div class="seleccion_producto">
+    <img src="./imagenes de productos/aceite.png" alt="vinos nacionales e importados"></a>
+    <a class="titulo_seleccion" href="#aceites">Aceites</a>
+   
+</div>
+<div class="seleccion_producto">
+    <img src="./imagenes de productos/cafe.png" alt="vinos nacionales e importados"></a>
+    <a class="titulo_seleccion" href="#cafes">Café</a>
+   
+</div>
+<div class="seleccion_producto">
+    <img src="./imagenes de productos/especias.png" alt="vinos nacionales e importados"></a>
+    <a class="titulo_seleccion" href="#especias">Especias</a>
+   
+</div>
+<div class="seleccion_producto">
+    <img src="./imagenes de productos/picada.png" alt="vinos nacionales e importados"></a>
+    <a class="titulo_seleccion" href="#picadas">Picadas</a>
+   
+</div>
+
+
+
+
+
+
+
+
 <!--end cabecera de productos-->  
 </section>
 
-<!--comienza la sección listado///////////////-->
+<!--comienza la sección galeria///////////////-->
 <section class="categorias_productos">
 <!--vinos////////////////////-->
-<div class="separador"><h2 class="nombre_categoria">Vinos</h2></div>
+
+<div class="separador"><h2 id="vinos" class="nombre_categoria">Vinos</h2></div>
 
 <div class="categorias">
    <div class="foto_producto"> 
     <img src="./imagenes de productos/vino/vino1.png" alt="vinos importados"> </div>
         <div class="nombre_producto">
-            <p> VINO TRAPICHE</p>
+          <h3>Trapiche</h3>
             <P>Malbec. Origen: Argentina</P></div>
 </div>    
 
@@ -59,66 +122,66 @@
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino2.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
-             <P>Malbec. Origen: Argentina</P></div>
+            <h3>Marquez Rosal</h3>
+             <P>Malbec. Origen: España</P></div>
  </div>    
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino3.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
-             <P>Malbec. Origen: Argentina</P></div>
+            <h3>Pernigce</h3>
+             <P>Chardonai. Origen: Francia</P></div>
  </div>    
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino4.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
-             <P>Malbec. Origen: Argentina</P></div>
+            <h3>Bai Gorri</h3>
+             <P>Rosado intenso. Origen: Italia</P></div>
  </div>    
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino5.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
-             <P>Malbec. Origen: Argentina</P></div>
+            <h3>Bai Gorri</h3>
+             <P>Rosado. Origen: Italia</P></div>
  </div>    
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino6.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
-             <P>Malbec. Origen: Argentina</P></div>
+            <h3>Colección Privada</h3>
+             <P>Sirá black. Origen: España</P></div>
  </div>    
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino7.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
-             <P>Malbec. Origen: Argentina</P></div>
+            <h3>Don Melchor</h3>
+             <P>Malbec. Origen: Chile</P></div>
  </div>    
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/vino/vino8.png" alt="vinos importados"> </div>
          <div class="nombre_producto">
-             <p> VINO TRAPICHE</p>
+            <h3>Trapiche</h3>
              <P>Malbec. Origen: Argentina</P></div>
  </div>    
 <!--aceites/////////////////////-->
- <div class="separador"><h2 class="nombre_categoria">Aceites</h2></div>
+ <div class="separador"><h2 id="aceites" class="nombre_categoria">Aceites</h2></div>
 
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/aceite/aceite1.png" alt="aceite importados"> </div>
          <div class="nombre_producto">
-             <p> Aceite de oliva</p>
-             <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
+           <h3>Abril</h3>
+             <P>Aceite de oliva extra virgen. Origen: Grecia</P></div>
 
             </div>  
 
@@ -126,16 +189,16 @@
  <div class="foto_producto"> 
      <img src="./imagenes de productos/aceite/aceite2.png" alt="aceite importados"> </div>
          <div class="nombre_producto">
-             <p> Aceite de oliva</p>
-             <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
+            <h3>Oro bailen</h3>
+             <P>Aceite de oliva extra virgen. Origen: Argentina</P></div>
 
             </div>  
             <div class="categorias">
                 <div class="foto_producto"> 
                  <img src="./imagenes de productos/aceite/aceite3.png" alt="aceite importados"> </div>
                      <div class="nombre_producto">
-                         <p> Aceite de oliva</p>
-                         <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
+                       <h3>Monte </h3>
+                         <P>Aceite de oliva extra virgen. Origen: Portugal</P></div>
             
                         </div> 
                         
@@ -143,8 +206,8 @@
                 <div class="foto_producto"> 
                   <img src="./imagenes de productos/aceite/aceite4.png" alt="aceite importados"> </div>
                      <div class="nombre_producto">
-                          <p> Aceite de oliva</p>
-                          <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
+                         <h3>Piscual</h3>
+                          <P>Aceite de oliva extra virgen. Origen: Mexico</P></div>
                         
                </div>    
                
@@ -152,15 +215,15 @@
                 <div class="foto_producto"> 
                  <img src="./imagenes de productos/aceite/aceite5.png" alt="aceite importados"> </div>
                      <div class="nombre_producto">
-                         <p> Aceite de oliva</p>
-                         <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
+                        <h3>La española</h3>
+                         <P>Aceite de oliva extra virgen. Origen: España</P></div>
             
                         </div>  
                         <div class="categorias">
                             <div class="foto_producto"> 
                              <img src="./imagenes de productos/aceite/aceite6.png" alt="aceite importados"> </div>
                                  <div class="nombre_producto">
-                                     <p> Aceite de oliva</p>
+                                    <h3>Oro bailen</h3>
                                      <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
                         
                                     </div>  
@@ -168,26 +231,26 @@
                                         <div class="foto_producto"> 
                                          <img src="./imagenes de productos/aceite/aceite7.png" alt="aceite importados"> </div>
                                              <div class="nombre_producto">
-                                                 <p> Aceite de oliva</p>
-                                                 <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
+                                                <h3>Gotas de Abril</h3>
+                                                 <P>Aceite de oliva extra virgen. Origen: España</P></div>
                                     
                                                 </div>  
                                                 <div class="categorias">
                                                     <div class="foto_producto"> 
                                                      <img src="./imagenes de productos/aceite/aceite8.png" alt="aceite importados"> </div>
                                                          <div class="nombre_producto">
-                                                             <p> Aceite de oliva</p>
+                                                             <h3>Urzante</h3>
                                                              <P>Aceite de oliva extra virgen. Origen: Italia</P></div>
                                                 
                                                             </div>  
  <!--cafe/////////////////////-->                         
- <div class="separador"><h2 class="nombre_categoria">Café</h2></div>
+ <div class="separador"><h2 id="cafes" class="nombre_categoria">Café</h2></div>
  <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/cafe/cafe1.png" alt="cafe importado"> </div>
          <div class="nombre_producto">
-             <p> Melita</p>
-             <P>Café molido intenso. Origen: Colombia</P></div>
+            <h3>Toscaf</h3>
+             <P>Café mezcla. Origen: Mexico</P></div>
 
             </div>  
 
@@ -195,47 +258,47 @@
                 <div class="foto_producto"> 
                  <img src="./imagenes de productos/cafe/cafe2.png" alt="cafe importado"> </div>
                      <div class="nombre_producto">
-                         <p> Melita</p>
-                         <P>Café molido intenso. Origen: Colombia</P></div>
+                         Cabrales
+                         <P>Café tostado molido. Origen: Perú</P></div>
             
                         </div>
                         <div class="categorias">
                             <div class="foto_producto"> 
                              <img src="./imagenes de productos/cafe/cafe3.png" alt="cafe importado"> </div>
                                  <div class="nombre_producto">
-                                     <p> Melita</p>
-                                     <P>Café molido intenso. Origen: Colombia</P></div>
+                                    <h3>Uno nueve</h3>
+                                     <P>Café molido intenso. Origen: Pakistan</P></div>
                         
                                     </div>
                                     <div class="categorias">
                                         <div class="foto_producto"> 
                                          <img src="./imagenes de productos/cafe/cafe4.png" alt="cafe importado"> </div>
                                              <div class="nombre_producto">
-                                                 <p> Melita</p>
-                                                 <P>Café molido intenso. Origen: Colombia</P></div>
+                                                <h3>bola de oro</h3>
+                                                 <P>Café 100% arábico. Origen: Colombia</P></div>
                                     
                                                 </div>
                                                 <div class="categorias">
                                                     <div class="foto_producto"> 
                                                      <img src="./imagenes de productos/cafe/cafe5.png" alt="cafe importado"> </div>
                                                          <div class="nombre_producto">
-                                                             <p> Melita</p>
-                                                             <P>Café molido intenso. Origen: Colombia</P></div>
+                                                            <h3>Melita</h3>
+                                                             <P>Café molido tradicional. Origen: Uruguay</P></div>
                                                 
                                                             </div>
                                                             <div class="categorias">
                                                                 <div class="foto_producto"> 
                                                                  <img src="./imagenes de productos/cafe/cafe6.png" alt="cafe importado"> </div>
                                                                      <div class="nombre_producto">
-                                                                         <p> Melita</p>
-                                                                         <P>Café molido intenso. Origen: Colombia</P></div>
+                                                                        <h3>Combate</h3>
+                                                                         <P>Café caracolillo. Origen: Guatemala</P></div>
                                                             
                                                                         </div>
                                                                         <div class="categorias">
                                                                             <div class="foto_producto"> 
                                                                              <img src="./imagenes de productos/cafe/cafe7.png" alt="cafe importado"> </div>
                                                                                  <div class="nombre_producto">
-                                                                                     <p> Melita</p>
+                                                                                     <h3>Toscaf</h3>
                                                                                      <P>Café molido intenso. Origen: Colombia</P></div>
                                                                         
                                                                                     </div>
@@ -243,157 +306,177 @@
                                                                                         <div class="foto_producto"> 
                                                                                          <img src="./imagenes de productos/cafe/cafe8.png" alt="cafe importado"> </div>
                                                                                              <div class="nombre_producto">
-                                                                                                 <p> Melita</p>
-                                                                                                 <P>Café molido intenso. Origen: Colombia</P></div>
+                                                                                                <h3>Melita</h3>
+                                                                                                 <P>Café gourmet. Origen: Brasil</P></div>
                                                                                     
                                                                                                 </div>
 <!--espacias///////////////////////-->
-<div class="separador"><h2 class="nombre_categoria">Especias</h2></div>
+<div class="separador"><h2 id="especias" class="nombre_categoria">Especias</h2></div>
 
 <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/especias/especias1.png" alt="especias importadas"> </div>
          <div class="nombre_producto">
-             <p> Sabores</p>
-             <P>Paprika ahumada. Origen: India</P></div>
+           <h3>Tatín</h3>
+             <P>Chile en grano. Origen: Mexico</P></div>
 
             </div>
             <div class="categorias">
                 <div class="foto_producto"> 
                  <img src="./imagenes de productos/especias/especias2.png" alt="especias importadas"> </div>
                      <div class="nombre_producto">
-                         <p> Sabores</p>
-                         <P>Paprika ahumada. Origen: India</P></div>
+                        <h3>SHO</h3>
+                         <P>Sal negra. Origen: India</P></div>
             
                         </div>
                         <div class="categorias">
                             <div class="foto_producto"> 
                              <img src="./imagenes de productos/especias/especias3.png" alt="especias importadas"> </div>
                                  <div class="nombre_producto">
-                                     <p> Sabores</p>
-                                     <P>Paprika ahumada. Origen: India</P></div>
+                                     <h3>Sho</h3>
+                                     <P>Sal de mostaza. Origen: India</P></div>
                         
                                     </div>
                                     <div class="categorias">
                                         <div class="foto_producto"> 
                                          <img src="./imagenes de productos/especias/especias4.png" alt="especias importadas"> </div>
                                              <div class="nombre_producto">
-                                                 <p> Sabores</p>
-                                                 <P>Paprika ahumada. Origen: India</P></div>
+                                                 <h3>Saint Gotard</h3>
+                                                 <P>Chai. Origen: Mexico</P></div>
                                     
                                                 </div>
                                                 <div class="categorias">
                                                     <div class="foto_producto"> 
                                                      <img src="./imagenes de productos/especias/especias5.png" alt="especias importadas"> </div>
                                                          <div class="nombre_producto">
-                                                             <p> Sabores</p>
-                                                             <P>Paprika ahumada. Origen: India</P></div>
+                                                            <h3>Sabores</h3>
+                                                             <P>Mostaza en grano. Origen: India</P></div>
                                                 
                                                             </div>
                                                             <div class="categorias">
                                                                 <div class="foto_producto"> 
                                                                  <img src="./imagenes de productos/especias/especias6.png" alt="especias importadas"> </div>
                                                                      <div class="nombre_producto">
-                                                                         <p> Sabores</p>
-                                                                         <P>Paprika ahumada. Origen: India</P></div>
+                                                                        <h3>Spain</h3>
+                                                                         <P>Sal ahumada. Origen: España</P></div>
                                                             
                                                                         </div>
                                                                         <div class="categorias">
                                                                             <div class="foto_producto"> 
                                                                              <img src="./imagenes de productos/especias/especias7.png" alt="especias importadas"> </div>
                                                                                  <div class="nombre_producto">
-                                                                                     <p> Sabores</p>
-                                                                                     <P>Paprika ahumada. Origen: India</P></div>
+                                                                                    <h3>Badia</h3>
+                                                                                     <P>Polvo de chili. Origen: India</P></div>
                                                                         
                                                                                     </div>
                                                                                     <div class="categorias">
                                                                                         <div class="foto_producto"> 
                                                                                          <img src="./imagenes de productos/especias/especias8.png" alt="especias importadas"> </div>
                                                                                              <div class="nombre_producto">
-                                                                                                 <p> Sabores</p>
+                                                                                                  <h3>Badia</h3>
                                                                                                  <P>Paprika ahumada. Origen: India</P></div>
                                                                                     
                                                                                                 </div>
 
 
 <!--picadas/////////////////-->
-<div class="separador"><h2 id="pic" class="nombre_categoria">Picadas</h2></div>
+
+<div class="separador"><h2 id="picadas" class="nombre_categoria">Picadas</h2></div>
 
 <div class="categorias">
     <div class="foto_producto"> 
      <img src="./imagenes de productos/picada/picada1.png" alt="Picadas gourmet"> </div>
          <div class="nombre_producto">
-             <p> Picada mediterranea</p>
-             <P>Picada premium</P></div>
+            <h3>Picada INNATO</h3>
+             <P>Super picada premium</P></div>
 
             </div>
             <div class="categorias">
                 <div class="foto_producto"> 
                  <img src="./imagenes de productos/picada/picada2.png" alt="Picadas gourmet"> </div>
                      <div class="nombre_producto">
-                         <p> Picada mediterranea</p>
-                         <P>Picada premium</P></div>
+                          <h3> Mini criolla</h3>
+                         <P>Criolla para 2 personas</P></div>
             
                         </div>
                         <div class="categorias">
                             <div class="foto_producto"> 
                              <img src="./imagenes de productos/picada/picada3.png" alt="Picadas gourmet"> </div>
                                  <div class="nombre_producto">
-                                     <p> Picada mediterranea</p>
-                                     <P>Picada premium</P></div>
+                                     <h3>Mediterranea</h3>
+                                     <P>Picada mediana</P></div>
                         
                                     </div>
                                     <div class="categorias">
                                         <div class="foto_producto"> 
                                          <img src="./imagenes de productos/picada/picada4.png" alt="Picadas gourmet"> </div>
                                              <div class="nombre_producto">
-                                                 <p> Picada mediterranea</p>
-                                                 <P>Picada premium</P></div>
+                                                 <h3> Mini alemana</h3>
+                                                 <P>Fiambres alemanes</P></div>
                                     
                                                 </div>
                                                 <div class="categorias">
-                                                    <div class="foto_producto"> 
+                                                    <div class="foto_producto">                                        
                                                      <img src="./imagenes de productos/picada/picada5.png" alt="Picadas gourmet"> </div>
                                                          <div class="nombre_producto">
-                                                             <p> Picada mediterranea</p>
-                                                             <P>Picada premium</P></div>
+                                                             <h3>Super picada</h3> 
+                                                             <P>Incluye tabla de quesos</P></div>
                                                 
                                                             </div>
                                                             <div class="categorias">
                                                                 <div class="foto_producto"> 
                                                                  <img src="./imagenes de productos/picada/picada6.png" alt="Picadas gourmet"> </div>
                                                                      <div class="nombre_producto">
-                                                                         <p> Picada mediterranea</p>
-                                                                         <P>Picada premium</P></div>
+                                                                         <h3> Picada mediterranea</h3>
+                                                                         <P>Picada premium p/10</P></div>
                                                             
                                                                         </div>
                                                                         <div class="categorias">
                                                                             <div class="foto_producto"> 
                                                                              <img src="./imagenes de productos/picada/picada7.png" alt="Picadas gourmet"> </div>
                                                                                  <div class="nombre_producto">
-                                                                                     <p> Picada mediterranea</p>
-                                                                                     <P>Picada premium</P></div>
+                                                                                     <h3>Mini picada</h3> 
+                                                                                     <P>Para dos personas</P></div>
                                                                         
                                                                                     </div>
                                                                                     <div class="categorias">
                                                                                         <div class="foto_producto"> 
                                                                                          <img src="./imagenes de productos/picada/picada8.png" alt="Picadas gourmet"> </div>
                                                                                              <div class="nombre_producto">
-                                                                                                 <p> Picada mediterranea</p>
-                                                                                                 <P>Picada premium</P></div>
+                                                                                                 <h3> Picada criolla</h3>
+                                                                                                 <P>Cinco ingredientes</P></div>
                                                                                     
                                                                                                 </div>
 
-
+                                                                                            </main>
 </section>
 
 
-<footer>
-    <div class="footer_productos">
+<a class="scrollup" href="#"><i class="fa fa-angle-up"></i></a>
+  
+  <footer>
+    <section class="container">
+      <div class="footer-img">
+        <img src="./imagenes/isologotipo3.svg" alt="logo" class="footer-logo">
+      </div>
+      
+        <ul class="footer-flex">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./club.html">Club</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      
+      <div class="sociales footer-flex">
+        <a href="https://es-la.facebook.com"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com"><i class="	fa fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="	fa fa-twitter-square"></i></a>
+        <a href="https://ar.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+      </div>
+    </section>
 
-    </div>
-</footer>
-    
+  </footer>
 
 
 
