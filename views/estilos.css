@@ -58,7 +58,7 @@ nav {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     padding: 1.2em;
     background-color: rgba(0, 0, 0, 0.308);
 }
@@ -90,6 +90,7 @@ nav {
 
 
 .navbar a {
+    text-transform: capitalize;
     padding: 0 .25em;
     position: relative;
 }
@@ -100,7 +101,8 @@ nav {
     
     
 }
-.navbar a:after {
+
+/* .navbar a:after {
     content: "";
     position: absolute;
     background-color: #de3c0f;
@@ -109,12 +111,15 @@ nav {
     left: 0;
     bottom: -10px;
     transition: 0.3s;
-}
+} */
 
-.navbar a:hover::after {
+/* .navbar a:hover::after {
     width: 100%;
-}
+} */
 
+.navbar a:hover {
+    color: rgb(242, 137, 9);
+}
 
 .hero-text {
     background-color: rgba(0, 0, 0, 0.6);
