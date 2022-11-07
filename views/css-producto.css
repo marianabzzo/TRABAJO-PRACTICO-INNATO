@@ -78,7 +78,7 @@ ul, li {
     display: none;
 }
 .check_btn{
-    color: rgb(242, 137, 9);
+    color: #fff;
     cursor: pointer;
     font-size: 1.5rem;
    display: none;
@@ -331,6 +331,55 @@ footer ul a {
        transition: all 0.5s;
        font-weight: bold;
     }
+    header{
+        height: 100px;
+    }
    
       
+}
+@media (max-width: 460px){
+    .check_btn{
+        display: block;
+        margin-right: 40px;
+        font-size: 2rem;
+    }
+    body{
+        background: #bfc1c3;
+    }
+    .header-nav-logo{
+        width: 80px;
+        height: auto;
+        margin-bottom: 45px;
+    }
+    .menu{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        background: black;
+      left: 0;
+        right: -100%;
+        transition: 0.8s;
+        top: 100px;
+        padding: 40px;
+    }
+    
+    
+    .nav-bar{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+    }
+    .nav-bar li{
+        padding: 10px;
+    }
+    
+    
+    
+    #check:checked + .menu{
+      background: #030303;
+      display: block;
+      transition: all 0.8s;
+    
 }
