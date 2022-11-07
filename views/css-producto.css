@@ -393,7 +393,10 @@ footer ul a {
        
     }
     
-    
+    .footer-flex li,
+.sociales a {
+    margin: 1rem 1rem;
+}
     .nav-bar{
         flex-direction: column;
         flex-wrap: wrap;
