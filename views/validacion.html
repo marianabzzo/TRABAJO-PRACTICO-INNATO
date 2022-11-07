@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validacion</title>
+</head>
+
+<body>
+
+    <h1>validacion</h1>
+
+    <label>Nombre</label>
+    <p id="nombre"></p>
+
+    <label>Email</label>
+    <p id="email"></p>
+
+    <label>Edad</label>
+    <p id="edad"></p>
+
+    <label>Provincias</label>
+    <p id="provincias"></p>
+
+
+    <script>
+
+        const queryString = window.location.search;
+        console.log(queryString);
+
+        const urlParams = new URLSearchParams(queryString);
+
+        const nombre = urlParams.get('nombre');
+        const edad = urlParams.get('email');
+        const email = urlParams.get('edad');
+        const provincias = urlParams.get('provincias');
+        
+        document.getElementById('nombre').innerHTML = nombre;
+        document.getElementById('email').innerHTML = edad;
+        document.getElementById('edad').innerHTML = edad;
+
+        document.getElementById('provincias').innerHTML = provincias;
+
+    </script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

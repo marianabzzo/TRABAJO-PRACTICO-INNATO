@@ -64,7 +64,7 @@ let click = true;
       });
       
   }  
-Swal.fire({
+  Swal.fire({
     title: '¿Deseas unirte al Mi Club?' + '¡Genial!',
     text: 'Llena el siguiente formulario',
 });
