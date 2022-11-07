@@ -318,4 +318,19 @@ footer ul a {
 .sociales a {
     margin: 1rem 1.5rem;
 }
-
+/*--------------------------breakpoint-----------------*/
+@media (max-width: 850px){
+    .header-nav-logo{
+        width: 120px;
+        height: auto;
+        margin-top:  50px;
+        transition: all 0.5s;
+    }
+    .nav-bar a{
+       font-size: 1.1rem;
+       transition: all 0.5s;
+       font-weight: bold;
+    }
+   
+      
+}
