@@ -1,5 +1,3 @@
-let comprar = confirm("¿Deseas unirte al Mi Club?")
-
 let click = true;
 
 async function getProvincias(){
@@ -36,6 +34,6 @@ if (click) {
   document.querySelector('p2').classList.add('nombreMiClub');
   }
 Swal.fire({
-    title: '¡Genial!',
+    title: '¿Deseas unirte al Mi Club?' + '¡Genial!',
     text: 'Llena el siguiente formulario',
 });
