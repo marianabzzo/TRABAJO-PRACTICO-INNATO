@@ -135,6 +135,19 @@ section .info{
    
     justify-content: center;
 }
+section h2{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(2rem, 1.3571rem + 2.8571vw, 3.5rem);
+    padding: 30px;
+    
+}
+.club-titulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(2rem, 1.3571rem + 2.8571vw, 3.5rem);
+    padding: 30px;
+}
+
 .imagen-main{
     width: 300px;
     height: auto;
@@ -312,11 +325,12 @@ h1{
     font-family: 'Raleway', sans-serif;
     font-size: clamp(2rem, 1.3571rem + 2.8571vw, 3.5rem);
 }
+/*
 h2{
     font-family: 'Roboto Flex', sans-serif;
     font-size: 4rem;
     padding: 30px;
-}
+}*/
 
 
 /*---------------------------video*/
@@ -347,9 +361,15 @@ video{
     text-align: center;
     color: #ee4e0a;
    
+   
+    padding: 30px;
+   
 }
 .titulo-video{
-    color: #ee4e0a;
+    color: #696564;
+    font-size: 3rem;
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 30px;
 }
 .video-boton a{
     font-family: 'Raleway', sans-serif; 
