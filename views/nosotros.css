@@ -1,19 +1,31 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    /*background-image: linear-gradient(to top, #cfd9df 0%, #3e4041 100%);*/
+    margin: 0;
+   
     box-sizing: border-box;
-    font-family:  'Roboto Flex', sans-serif;
+   
+   
+    
+   /* background-repeat: no-repeat;
+    background-size: cover;*/
+  
+  
 }
-
+/*------------------header y nav----------------------------*/
 header {
     display: flex;
-    color: rgb(210, 40, 40);
     height: 85px;
     justify-content: space-between;
     background: black;
     
     align-items: center;
+    font-family:  'Roboto Flex', sans-serif;
     
+}
+.innato{
+    color: #fff;
 }
 .header-container{
   
@@ -26,7 +38,7 @@ header {
 
 
 .header-nav-logo{
-    width: 70px;
+    width: 90px;
     height: auto;
     
    margin-left: 50px;
@@ -65,29 +77,26 @@ ul, li {
 .check_btn{
     color: #fff;
     cursor: pointer;
-    font-size: 2rem;
-  margin-left: 76%;
-  z-index: 1;
-  display: none;
-  
+    font-size: 1.5rem;
+   display: none;
 }
 /*-----------imagen de cabecera-----*/
 .imagen-cabecera{
-  background-color: rgb(232, 237, 237);
-  position: relative;
+    width: 500px;
+    height: 700px;
+   background-color:  rgb(168, 25, 25);
+   display: flex;
+   justify-content: center;
    
+
 }
-.imagen-cabecera img{
-    
-   width: 1200px;
-   height: auto;
-   
-}
-.img-cab{
-    display: flex;
-    margin: 0% auto;
-   
-}/*
+
+ 
+
+
+
+
+
 .imagen-cabecera .texto-imagen-vabecera{
     position: absolute;
     align-items: center;
@@ -95,32 +104,65 @@ ul, li {
 
 
 
-/*
+
 .main-contenido{
-    background-color: aqua;
-}*/
-.main-titulo{
+   
+  
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+       flex-wrap: wrap;
     text-align: center;
     margin-top: 100px;
+    justify-content: center;
     
 }
 
-article .info{
+section .info{
     font-family:  'Roboto Flex', sans-serif;
     text-align: justify;
+    width: 100%;
+   
+    justify-content: center;
+   padding-left: 250px;
+   padding-right: 250px;
   
 }
 .info{
     text-align: justify; 
-    margin-right: 40px;
+   
+    justify-content: center;
+}
+.imagen-main{
+    width: 300px;
+    height: auto;
+   left: 700px;
+   bottom: 280px;
+  
+  
+  
 }
 
+.imagen-main img{
+    z-index: 1;
+    opacity: 0.3;
+   
+ 
+   
+   
+}
+main section .imagen.main{
+    top: 100px;
+}
 /*SLIDER-----------------------------------------*/
 .slider{
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin-top: 125px;
+    margin-top: -150px;
+    background: #d2d0ce;
    
 }
 .slider ul{
@@ -130,6 +172,7 @@ article .info{
 
     animation: slide 20s infinite alternate;
     animation-timing-function: linear;
+    transition: all .09s;
 
 }
 .slider li{
@@ -168,11 +211,13 @@ article .info{
 .club{
     margin-top: 50px;
     text-align: center; 
-   
+    font-family:  'Roboto Flex', sans-serif;
+    font-weight: 700;
     
 }
-strong{
+ strong{
     color: rgb(238, 78, 10);
+  font: bolder;
 }
 .club-tarjeta img{
     width: 600px;
@@ -212,11 +257,20 @@ strong{
     color: rgb(90, 94, 94);
     padding: 20px;
     
+    
 }
 
 .club-ofrece{
     margin-top: 40px;
     
+}
+
+.linea{
+    background-color: #ee4e0a;
+    width: 60%;
+    height: 1px;
+    margin: 0 auto;
+
 }
 /*
 .circulo{
@@ -255,50 +309,70 @@ strong{
     border-radius: 0px 150px 0px 0px;*/
 
 h1{
-    font-size: 3rem;
-}
-h2{
     font-family: 'Raleway', sans-serif;
     font-size: clamp(2rem, 1.3571rem + 2.8571vw, 3.5rem);
+}
+h2{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 4rem;
     padding: 30px;
 }
 
-.main-contenido{
+
+/*---------------------------video*/
+.video-contenedor{
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-}
-/*---------------------------video*/
-.video{
-    width: 1200px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    border: 10px solid #ee4e0a;
+    border-radius: 5px;
+    
+
     
 }
 video{
     width: 100%;
-    position: relative;
+    
     top: -200px;
-      
+      display: flex;
+      align-items: flex-end;
  
 }
 .video h2{
     text-align: center;
+    color: #ee4e0a;
    
 }
-.video .titulo-video{
-    color: rgb(83, 81, 81);
-    padding-bottom: 100px;
-    position: relative;
-   top: -200px;
+.titulo-video{
+    color: #ee4e0a;
+}
+.video-boton a{
+    font-family: 'Raleway', sans-serif; 
+    
+ 
+    background-color: #ee4e0a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px lightslategray, 0 6px 20px rgba(0, 0, 0, 0.19) ;
+    text-decoration: none;
+    
+}
+.video-boton{
+    margin-bottom: 20px;
 }
 /*--------footer------------------------*/
 footer {
     
     background-color: black;
     position: relative;
+    font-family:  'Roboto Flex', sans-serif;
 }
 
 .footer-img {
@@ -308,7 +382,7 @@ footer {
 }
 
 .footer-logo {
-    width: 90px;
+    width: 100px;
     position: absolute;
     top: -10%;
 }
@@ -327,7 +401,7 @@ footer ul a {
 .sociales a {
     color: rgb(238, 134, 7);
     font-size: 2rem;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.308);
+   
 }
 
 .footer-flex {
@@ -343,5 +417,92 @@ footer ul a {
     margin: 1rem 1.5rem;
 }
 
-/*--------------Breakpoint----------*/
 
+.scrollup {
+    cursor: pointer;
+    color: #fff;
+    background-color: #ee4e0a;
+    border: 2px solid #ee4e0a; 
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 10;
+}
+
+
+
+/*--------------------------breakpoint tablet-----------------*/
+@media (max-width: 850px){
+    .header-nav-logo{
+        width: 120px;
+        height: auto;
+        margin-top:  50px;
+        transition: all 0.5s;
+    }
+    .nav-bar a{
+       font-size: 1.1rem;
+       transition: all 0.5s;
+       font-weight: bold;
+    }
+    header{
+        height: 100px;
+    }
+   .video-boton{
+    top: 15px;
+    
+   }
+    }
+    /*--------------------------breakpoint movil-----------------*/
+      
+
+@media (max-width: 460px){
+    .check_btn{
+        display: block;
+        margin-right: 40px;
+        font-size: 2rem;
+    }
+    body{
+        background: #bfc1c3;
+    }
+    .header-nav-logo{
+        width: 80px;
+        height: auto;
+        margin-bottom: 45px;
+    }
+    .menu{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        background: black;
+      left: 0;
+        right: -100%;
+        transition: 0.8s;
+        top: 100px;
+        padding: 40px;
+    }
+    
+    
+    .nav-bar{
+        color: #fff;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+    }
+    .nav-bar li{
+        padding: 10px;
+    }
+    
+    
+    
+    #check:checked + .menu{
+      background: #030303;
+      display: block;
+      transition: all 0.8s;
+    
+}
