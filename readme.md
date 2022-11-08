@@ -34,10 +34,3 @@ La carpeta Views  contiene css styles, icons, imagenes, scripts y los htmls de l
 Innato es una tienda online de productos gourmet argentinos.
 
 
-
-**Tabla de Contenidos**
-
-[TOCM]
-
-[TOC]
-
