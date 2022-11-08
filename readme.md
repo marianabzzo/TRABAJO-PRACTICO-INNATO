@@ -1,15 +1,47 @@
-echo "# TRABAJO-PRACTICO-INNATO" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/marianabzzo/TRABAJO-PRACTICO-INNATO.git
-git push -u origin main
+### Grupo 1
+# INNATO Tienda Gourmet
 
-or push an existing repository from the command line
-git remote add origin https://github.com/marianabzzo/TRABAJO-PRACTICO-INNATO.git
-git branch -M main
-git push -u origin main
+
+[![Screenshot](https://raw.githubusercontent.com/marianabzzo/TRABAJO-PRACTICO-INNATO/main/screenshot.png "Screenshot")](https://raw.githubusercontent.com/marianabzzo/TRABAJO-PRACTICO-INNATO/main/screenshot.png:// "Screenshot")
+
+
+### Autores
+Mariana Bruzzo, Lorena Frías y Paola Brasca
+
+### Github repository
+Este es el repositorio[ Grupo 1 INNATO Tienda Gourmet - Repository](https://github.com/marianabzzo/TRABAJO-PRACTICO-INNATO  " Grupo 1 INNATO Tienda Gourmet - Repository")
+
+###Sitio Web
+El demo esta en el siguiente [Innato Tienda Gourmet](http://https://innato.netlify.app/ "Innato Tienda Gourmet") 
+
+### Tech Stack
+Client: HTML, CSS, Vanilla JavaSCript
+
+### Tools Utilizadas
+Favicon
+Awesome Fonts
+Sweet Alert
+Google Fonts
+
+
+### Estructura de carpeta
+
+El index.html and readme son los archivos en el root folder y tambien incluyen un screenshot y un archivo readme.
+
+La carpeta Views  contiene css styles, icons, imagenes, scripts y los htmls de las paginas.
+
+### About
+Innato es una tienda online de productos gourmet argentinos.
+
+
+
+**Tabla de Contenidos**
+
+[TOCM]
+
+[TOC]
+
+
 
 FONTS
 
