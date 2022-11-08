@@ -11,8 +11,8 @@ Mariana Bruzzo, Lorena Frías y Paola Brasca
 ### Github repository
 Este es el repositorio[ Grupo 1 INNATO Tienda Gourmet - Repository](https://github.com/marianabzzo/TRABAJO-PRACTICO-INNATO  " Grupo 1 INNATO Tienda Gourmet - Repository")
 
-###Sitio Web
-El demo esta en el siguiente [Innato Tienda Gourmet](http://https://innato.netlify.app/ "Innato Tienda Gourmet") 
+### Sitio Web
+El demo esta en el siguiente [Innato Tienda Gourmet](https://innato.netlify.app/ "Innato Tienda Gourmet") 
 
 ### Tech Stack
 Client: HTML, CSS, Vanilla JavaSCript
@@ -40,35 +40,3 @@ Innato es una tienda online de productos gourmet argentinos.
 [TOCM]
 
 [TOC]
-
-
-
-FONTS
-
------15% off
-font-family: 'Poppins', sans-serif;
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-
-
-----TEXTO  
-
-font-family: 'Raleway', sans-serif;
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
-
-----TITULOS y NAV
-
-Raleway medium
-
-font-family: 'Raleway', sans-serif;
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
